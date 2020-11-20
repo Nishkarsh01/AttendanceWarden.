@@ -1,0 +1,26 @@
+<%-include('partials/sheetHeader') -%>
+
+</head>
+<body>
+<div class="wrapper" style="text-align:center">
+<h2><%= dataArray[0].titleInfo %> | <%= dataArray[0].classInfo %> | <%= dataArray[0].date%> | <%= dataArray[0].theTime %> </h2>
+
+<input style="text-align:center" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Roll No.." title="Type in a Roll No.">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:40%; text-align: center;">Roll No.</th>
+    <th style="width:60%; text-align: center;">Attendance</th>
+  </tr>
+
+  <% for (let i = 0; i < dataArray.length; i++) {%>
+  <tr>
+    <td style="text-align: center;"> <%= dataArray[i].RollNo %> </td>
+    <td style="text-align: center;"> <%= dataArray[i].Attendance %>  <img src="<%= dataArray[i].url %> " alt=""> </td>
+  </tr>
+  <%}%>
+
+</table>
+</div>
+
+<%-include('partials/sheetFooter') -%>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AttendanceWarden</title>
+	<meta name="description" content="AttendanceWarden, The Ultimate Attendance taking WebApp" />
+	<meta name="keywords" content="AttendanceWarden, Attendance, school , Roll No., Attendance Register, College" />
+	<meta name="author" content="Nishkarsh Dubb" />
+
+	<!-- Favicons (created with http://realfavicongenerator.net/)-->
+
+	<link rel="shortcut icon" href="img/favicons/favicon.png">
+
+	
+
+	<!-- Normalize -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+	<!-- Elegant Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="css/cardio.css">
+</head>
+
+<body>
+	<div class="preloader">
+		<img src="img/loader.gif" alt="Preloader image">
+	</div>
+	<nav class="navbar">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="img/logo.png" data-active-url="img/logo-active.png" alt="" width="50px" height="42px" style="border-radius: 10%"></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					<li><a href="#records"class="btn btn-blue">Your Attendance Records</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Quick Sheet</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<header id="intro" class="dashboard">
+		<div class="container layer">
+			<div class="table">
+				<div class="header-text">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h3 class="light white"> Hey there <%= thatUser[0].username %> </h3>
+							<h1 class="white typed">Welcome to your Dashboard.</h1>
+							<span class="typed-cursor">|</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+	
+	
+		
+
+	<!-- <section id="records" class="section section-padded">
+		<div class="container">
+			<div class="row text-center title">
+				<h2>Records</h2>
+				<br>
+				<h4 class="light muted">Say Goodbye to Paper Attendance Registers for AttendanceWarden is here. </h4>
+			</div>
+			<div class="row services">
+				
+			
+				
+
+				<% recordArray.forEach(function(record){ var absentArray = record.filter((el)=> el.Attendance === "Absent") %>
+
+				<% var allElements = record.map((el)=> el)  %> 
+				
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							
+							<img src="img/icons/class-blue.png" alt="" class="icon">
+						</div>
+						
+						<h5 class="heading"><%= record[0].titleInfo %>,</h5>
+						<h5 class="heading"><%= record[0].classInfo %>,</h5>
+						<h5 class="heading"><%= record[0].date %>,</h5>
+						<h5 class="heading"><%= record[0].theTime %>.</h5>
+						<p class="description">Number of Absent Students: <%= absentArray.length %></p>
+						<br>
+						<a href="/<%= record[0].uid %> " class="description btn btn-blue">View Attendance Sheet</a>
+					</div>
+				</div>
+				
+				<% }) %>
+			</div>
+
+		</div>
+		<div class="cut cut-bottom"></div>
+	</section>  -->
+
+	<section id="records" class="section section-padded">
+		<div class="container">
+			<div class="row text-center title">
+				<h2>Records</h2>
+				<br>
+			</div>
+
+				
+			<br>
+			<br>
+			
+				<div class="row text-center title">
+					<% recordArray.forEach(function(record){ var absentArray = record.filter((el)=> el.Attendance === "Absent") %>
+
+					<% var allElements = record.map((el)=> el)  %> 
+					
+							<h5 ><a href="/<%= record[0].uid %> " ><i class="icon fa fa-book "></i> <%= record[0].titleInfo %>, <%= record[0].classInfo %>, <%= record[0].date %>, <%= record[0].theTime %>. (Number of Absent Students: <%= absentArray.length %>) </a> </h5>
+							
+							<br>
+					<% }) %>
+					
+				</div>
+			
+			
+		
+
+		</div>
+	
+	</section> 
+
+	
+							
+
+
+
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal-popup">
+				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+				<h3 class="white">New Sheet</h3>
+				<form action="/dashboard" method="post" class="popup-form">
+					<input type="text" class="form-control form-white" name="thatUser" readonly="readonly" value=" <%= thatUser[0].username %> " >
+					<input type="text" class="form-control form-white" placeholder="Enter Sheet Title..." name="sheetTitle">
+					<input type="text" class="form-control form-white" placeholder="Enter Class Name..." name="className">
+					<input type="text" class="form-control form-white" placeholder="Enter First RollNo..." name="first">
+					<input type="text" class="form-control form-white" placeholder="Enter Last RollNo..." name="last">
+	
+					<button type="submit" class="btn btn-submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<section class="section section-padded blue-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="owl-twitter owl-carousel">
+						<div class="item text-center">
+							<i class="icon fa fa-quote-left "></i>
+							<h4 class="white light">Value your time.<br></h4>
+							<h4 class="light-white light">-Seneca</h4>
+						</div>
+						<div class="item text-center">
+							<i class="icon fa fa-quote-left "></i>
+							<h4 class="white light">Smart work pays best.Trust it.</h4>
+							<h4 class="light-white light">-Conor McGregor</h4>
+						</div>
+						<div class="item text-center">
+							<i class="icon fa fa-quote-left "></i>
+							<h4 class="white light">All change is hard at first, messy in the middle, and so gorgeous at the end.</h4>
+							<h4 class="light-white light">- Robin Sharma</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer if="#footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 text-center-mobile">
+					<h3 class="white">Thankyou for choosing AttendanceWarden!</h3>
+					<h5 class="light regular light-white">AttendanceWarden! The Ultimate Attendance tracking WebApp.</h5>
+					<a href="/"  class="btn btn-blue ripple trial-button" >Home</a>
+				</div>
+				<div class="col-sm-6 text-center-mobile">
+					<h3 class="white">About the Developer</h3>
+					<h5 class="light regular light-white">This Web App has been developed by  <a href="http://nishkarshdubb-fullstack.herokuapp.com/">Mr. Nishkarsh Dubb</a></h5>
+			
+				</div>
+			</div>
+			<div class="row bottom-footer text-center-mobile">
+				<div class="col-sm-8">
+					<p>&copy; Copyright ©2020 All rights reserved | <a href="http://nishkarshdubb-fullstack.herokuapp.com/">Nishkarsh Dubb- Full Stack</a></p>
+				</div>
+				<div class="col-sm-4 text-right text-center-mobile">
+					<ul class="social-footer">
+						<li><a href="https://github.com/Nishkarsh01"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/nishkarsh-dubb-0590321bb/"><i class="fa fa-linkedin "></i></a></li>
+						<li><a href="https://www.instagram.com/nishkarsh_dubb/?hl=en"><i class="fa fa-instagram "></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<%-include('partials/footer') -%>

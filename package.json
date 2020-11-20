@@ -1,0 +1,29 @@
+{
+  "name": "attendancewarden",
+  "version": "1.0.0",
+  "description": "an Attendance Taking WebApp",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nishkarsh01/AttendanceWarden.git"
+  },
+  "author": "NishkarshDubb",
+  "license": "ISC",
+  "engines": {
+    "node": "12.19.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Nishkarsh01/AttendanceWarden/issues"
+  },
+  "homepage": "https://github.com/Nishkarsh01/AttendanceWarden#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "mongoose": "^5.10.15"
+  }
+}
