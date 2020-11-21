@@ -73,4 +73,4 @@ After extracting the files,
   
 ## Developed By
 
-Team Nishkarsh,( [Nishkarsh Dubb ](http://nishkarshdubb-fullstack.herokuapp.com/) and [Shivangi Sharma ](https://www.linkedin.com/in/shivangiisharma/) )for [Octahacks3.0](https://octahacks.tech/)
+Team Nishkarsh,( [Nishkarsh Dubb ](http://nishkarshdubb-fullstack.herokuapp.com/) and [Shivangi Sharma ](https://www.linkedin.com/in/shivangiisharma/) ) for [Octahacks3.0](https://octahacks.tech/)
