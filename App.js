@@ -53,11 +53,12 @@ app.post('/signup', function (req, res) {
   var email = req.body.email;
   var password = md5(req.body.password);
 
-  if (username === '' || email === '' || password === '') {
+  if (username === '' || email === '' || password === '' || password === ' ') {
+    res.render('failure');
     console.log('a field is empty');
   } else {
     users.push({ username: username, email: email, password: password });
-
+    res.render('success');
     console.log('user has been created');
   }
 
@@ -92,6 +93,7 @@ app.post('/login', function (req, res) {
       thatUser: loginUser,
     });
   } else {
+    res.render('loginFailure');
     console.log(' user not found');
   }
 });
@@ -195,7 +197,7 @@ app.post('/submitrecord', function (req, res) {
   recordData = data;
   recordDataList.push(recordData);
 
-  res.redirect('/');
+  res.render('loginAgain.ejs');
 });
 
 /****listen */
