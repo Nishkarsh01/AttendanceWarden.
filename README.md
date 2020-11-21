@@ -2,7 +2,6 @@
 
 The Ultimate Attendance tracking WebApp. AttendanceWarden is a Simple App that makes the task of Tracking Attendance Simple.
 
-![WebApp Screenshot](screenshots/1.jpg)
 
 ## Author 
 > Nishkarsh01 and Shivangi Sharma
@@ -12,6 +11,8 @@ The Ultimate Attendance tracking WebApp. AttendanceWarden is a Simple App that m
 [https://attendancewarden--demo.herokuapp.com/](https://attendancewarden--demo.herokuapp.com/)
 
 ## Screenshots 📷
+
+![WebApp Screenshot](screenshots/1.jpg)
 
 ![WebApp Screenshot](screenshots/2.png)
 
