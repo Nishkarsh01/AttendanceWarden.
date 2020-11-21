@@ -44,4 +44,3 @@ AttendanceWarden keeps history of all your Attendances without any need of acces
 
 + Quick Attendance Report with each Attendance Sheet.
 
-+ Downloadable option for each Attendance Sheet.
