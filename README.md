@@ -44,3 +44,12 @@ AttendanceWarden keeps history of all your Attendances without any need of acces
 
 + Quick Attendance Report with each Attendance Sheet.
 
+## Developed Using 💻
+
++ [Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
++ [Css](https://developer.mozilla.org/en-US/docs/Web/CSS)
++ [Bootstrap](https://getbootstrap.com/)
++ [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
++ [Nodejs](https://nodejs.org/en/)
++ [Express](http://expressjs.com/)
++ [MongoDB](https://www.mongodb.com/)
