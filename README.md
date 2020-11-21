@@ -4,8 +4,6 @@ The Ultimate Attendance tracking WebApp. AttendanceWarden is a Simple App that m
 
 ![WebApp Screenshot](screenshots/1.jpg)
 
-
-
 ## Author 
 > Nishkarsh01 and Shivangi Sharma
 
@@ -53,3 +51,18 @@ AttendanceWarden keeps history of all your Attendances without any need of acces
 + [Nodejs](https://nodejs.org/en/)
 + [Express](http://expressjs.com/)
 + [MongoDB](https://www.mongodb.com/)
+
+## Installation or Getting Started
+
+Run the following command in the terminal:
+
+	git clone https://github.com/Nishkarsh01/AttendanceWarden..git
+or download the zip file from github.
+    
+
+## Usage
+After extracting the files,
+
+    cd AttendanceWarden.
+    npm install 
+    node App.js
