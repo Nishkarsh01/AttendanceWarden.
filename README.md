@@ -9,6 +9,10 @@ The Ultimate Attendance tracking WebApp. AttendanceWarden is a Simple App that m
 ## Author 
 > Nishkarsh01 and Shivangi Sharma
 
+## Live Demo 
+
+[https://attendancewarden--demo.herokuapp.com/](https://attendancewarden--demo.herokuapp.com/)
+
 ## Screenshots 📷
 
 ![WebApp Screenshot](screenshots/2.png)
@@ -25,7 +29,7 @@ Spend less time on repetitive manual tasks like data entry and focus on the job 
 
 ### + Mark Attendance at Anytime from Anywhere: 
 
-WAttendanceWarden keeps history of all your Attendances without any need of access to external storage....
+With AttendanceWarden you can easily mark Attendances no matter where you are or what time it is...
 
 ### + Keep history of all your Attendances: 
 
