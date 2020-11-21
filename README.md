@@ -17,7 +17,7 @@ The Ultimate Attendance tracking WebApp. AttendanceWarden is a Simple App that m
 
 ![WebApp Screenshot](screenshots/4.png)
 
-## Why use AttendanceWarden?
+## Why use AttendanceWarden? 💡 
 
 ### + Reduce Repetitive, Manual Tasks: 
 
@@ -30,3 +30,14 @@ WAttendanceWarden keeps history of all your Attendances without any need of acce
 ### + Keep history of all your Attendances: 
 
 AttendanceWarden keeps history of all your Attendances without any need of access to external storage...
+
+
+##  Features: 💡 
+
++ Track Attendences at Anytime from Anywhere, irrespective of what device you're on. With our great Responsive UI and UX our users can track attendances easily from their mobile devices.
+
++ Keep history of all your Attendances without any need of access to external storage.
+
++ Quick Attendance Report with each Attendance Sheet.
+
++ Downloadable option for each Attendance Sheet.
