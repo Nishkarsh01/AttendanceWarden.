@@ -53,7 +53,7 @@ AttendanceWarden keeps history of all your Attendances without any need of acces
 + [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 + [Nodejs](https://nodejs.org/en/)
 + [Express](http://expressjs.com/)
-+ [MongoDB](https://www.mongodb.com/)
++ [MongoDB](https://www.mongodb.com/) (The App will be linked to a DB very soon...)
 
 ## Installation or Getting Started
 
