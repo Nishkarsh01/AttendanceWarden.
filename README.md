@@ -1,4 +1,4 @@
-# AttendanceWarden. (Under Development)<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
+# AttendanceWarden.<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 
 The Ultimate Attendance tracking WebApp. AttendanceWarden is a Simple App that makes the task of Tracking Attendance Simple.
 
