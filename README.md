@@ -76,3 +76,16 @@ After extracting the files,
 ## Developed By
 
 Team Nishkarsh,( [Nishkarsh Dubb ](http://nishkarshdubb-fullstack.herokuapp.com/) and [Shivangi Sharma ](https://www.linkedin.com/in/shivangiisharma/) ) for [Octahacks3.0](https://octahacks.tech/)
+
+## Collaborate
+To collaborate, reach us on [nishdubb11@gmail.com]()
+
+## Further help/Reference
+
++ [MDN Web Docs](https://developer.mozilla.org/en-US/)
++ [getbootstrap.com](https://getbootstrap.com/)
++ [nodejs.org](https://nodejs.org/en/)
++ [expressjs.com](http://expressjs.com/)
++ [mongodb.com](https://www.mongodb.com/)
++ [w3schools.com](https://www.w3schools.com/)
+    
