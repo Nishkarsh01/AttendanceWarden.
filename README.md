@@ -5,8 +5,7 @@ The Ultimate Attendance tracking WebApp. AttendanceWarden is a Simple App that m
 <br>
 
 ![WebApp Screenshot](screenshots/1.jpg)
-## Developed By
-> Nishkarsh Dubb and Shivangi Sharma
+
 
 ## Live Demo 
 
